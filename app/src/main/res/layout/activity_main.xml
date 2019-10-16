@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.example.demopr21010.ui.main.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageViewSlide"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@color/colorAccent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/textViewRetrofit"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Retrofit"
+            android:textColor="#ffff"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imageViewSlide" />
+
+        <TextView
+            android:layout_marginTop="16dp"
+            android:id="@+id/textViewRomData"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:textColor="#ffff"
+            android:text="Room"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewRetrofit" />
+
+        <FrameLayout
+            android:id="@+id/frameMainContent"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
